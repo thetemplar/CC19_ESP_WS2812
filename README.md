@@ -1,6 +1,7 @@
 ﻿# Coding Challenge 2019 - Trinket!
 
 Beschreibungen und Handouts der CC19 der EFS!
+![](Trinket.jpg)
 
 ## Was ist drauf?
 - ESP8266-12E
@@ -18,7 +19,7 @@ Eine per Arduino-IDE geschriebene Software, welche ein kleines LED-Lichtspiel an
 1) Arduino-IDE laden
 2) ESP8266 Bib laden (https://github.com/esp8266/Arduino)
 3) OTA Funktion durchlesen (https://arduino-esp8266.readthedocs.io/en/latest/ota_updates/readme.html#arduino-ide)  
-> Blockquote ggf ist es nicht notwendig extra Python zu installieren
+> ggf ist es nicht notwendig extra Python zu installieren
 4) Sich in das WLAN des ESP8266 verbinden (heißt CC19_ESP8266_<hex-chip-id\>)
 5) Bei Board "NodeMCU 1.0 .." auswählen, bei Port die Netzwerkschnittstelle (siehe Settings.png in diesem Repo)
 6) Flashen
