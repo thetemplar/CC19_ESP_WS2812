@@ -29,6 +29,10 @@ void setup() {
   String host = "CC19_ESP8266_" + String(chipId, HEX);
   WiFi.softAP(host);
 
+  String otaHostName = "CC19 OTA ESP8266_" + String(chipId, HEX);
+  char otaHostNameChar[otaHostName.length()+1];
+  otaHostName.toCharArray(otaHostNameChar, otaHostName.length());
+  ArduinoOTA.setHostname(otaHostNameChar);
   ArduinoOTA.onStart([]() {
     String type;
     if (ArduinoOTA.getCommand() == U_FLASH) {
@@ -67,10 +71,10 @@ void setup() {
 }
 
 void loop() {
-  rainbow(10);
   ArduinoOTA.handle();
+  rainbow(10);
   if(millis() > 600000)
-    WiFi.mode(WIFI_OFF);
+	WiFi.mode(WIFI_OFF);
 }
 
 // Fill strip pixels one after another with a color. Strip is NOT cleared
