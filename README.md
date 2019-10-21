@@ -30,4 +30,4 @@ ESP8266 "gebrickt" oder OTA geht nicht? Alternativ per UART (also nach einem FTD
 [hier](https://www.instructables.com/id/ESP-12F-ESP8266-Module-Minimal-Breadboard-for-Flas/).
 
 ## Details zu den Robots
-...folgt :)
+siehe "robot.pdf"
