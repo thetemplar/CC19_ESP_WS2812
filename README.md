@@ -25,6 +25,9 @@ Eine per Arduino-IDE geschriebene Software, welche ein kleines LED-Lichtspiel an
 6) Flashen
 **ACHTUNG!** Neue Software muss auch OTA unterstützen, am besten die FW dieses Repos als Basis nutzen!
 
+## [ERROR]: No response from device
+Unter Windows muss die Firewall ggf ausgeschaltet werden (obwohl sie vorher fragt ob man die Firewall-Regel hinzufügen will)
+
 ## I fcked up... 
 ESP8266 "gebrickt" oder OTA geht nicht? Alternativ per UART (also nach einem FTDI-Adapter wie CP210x oder FT232RL) die Platine über die Header anschließen. Damit der Bootloader in den Flashmodus geht, muss **VOR** Powerup der GPIO-0 auf Masse gezogen werden. Dies geht am besten in dem das linke Pad des oberen rechten Widerstands auf Masse gezogen wird! Für alles weitere gibt es viele viele Tutorials im Internet.  Zum Beispiel [hier](https://alselectro.wordpress.com/2016/11/07/esp8266-upload-code-from-arduino-ide-no-arduino-board-required/) oder
 [hier](https://www.instructables.com/id/ESP-12F-ESP8266-Module-Minimal-Breadboard-for-Flas/).
